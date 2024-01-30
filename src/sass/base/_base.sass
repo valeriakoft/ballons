@@ -1,0 +1,30 @@
+*, ::after, ::before   
+    margin: 0
+    padding: 0
+    box-sizing: border-box
+html
+    font-size: 62.5%
+    @include respond(tab-land)
+        font-size: 56.25%
+    @include respond(tab-port)
+        font-size: 50%
+    @include respond(phone)
+        font-size: 30%
+    @include respond(big-screen)
+        font-size: 75%
+
+    
+
+body
+    font-family: 'Roboto', sans-serif
+    font-weight: 400
+    font-size: 1.6rem
+    color: $color-grey
+    letter-spacing: .2rem
+    padding: 5rem
+    background-color: $color-white
+
+.container
+    background-color: $color-grey-light
+    position: relative
+    z-index: 1

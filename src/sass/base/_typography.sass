@@ -1,0 +1,85 @@
+// это заголовки и их стили
+.title-first
+    color: $color-white
+    &__main 
+        font-size: 5rem
+        font-weight: 800
+        letter-spacing: 1rem
+        line-height: normal
+        display: block
+        margin-bottom: 1rem
+        animation-name: leftToRight
+        animation-duration: 2s
+        animation-delay: 1s 
+        animation-timing-function: ease
+        backface-visibility: hidden
+        @include respond(tab-land)
+            font-size: 4rem
+        @include respond(tab-port)
+            font-size: 2.9rem
+            letter-spacing: .5rem
+        
+    &__secondary
+        font-size: 4rem
+        font-weight: 200
+        letter-spacing: .5rem
+        line-height: normal
+        display: block
+        animation-name: rightToLeft
+        animation-duration: 2s
+        animation-delay: 1s
+        animation-timing-function: ease
+        backface-visibility: hidden
+        margin-bottom: 5rem
+        @include respond(tab-land)
+            font-size: 3.5rem
+            margin-bottom: 3.5rem
+        @include respond(tab-port)
+            font-size: 2.5rem
+            margin-bottom: 3rem
+            letter-spacing: .2rem
+.title-secondary
+    font-size: 3.6rem
+    font-weight: 800
+    text-transform: uppercase
+    letter-spacing: 1rem
+    background:  linear-gradient(90deg, rgba(186, 133, 84, 0.70) 0.03%, rgba(70, 50, 8, 0.7) 99.94%),
+    -webkit-background-clip: text
+    color: transparent
+    text-align: center
+    transition: all .4s
+    backface-visibility: hidden
+    @include respond(tab-land)
+        font-size: 3rem
+        letter-spacing: .2rem
+    
+    
+    &:hover
+        transform: skewY(2deg) skewX(15deg) scale(1.1)
+        text-shadow: $shadow-h2
+    &_white
+        color: $color-white
+        @include respond(tab-port)
+            font-size: 2.5rem
+
+
+.title-third
+    font-size: 2rem
+    font-weight: 700
+    letter-spacing: .2rem
+    text-transform: uppercase
+    color: $color-grey
+    @include respond(tab-land)
+        font-size: 1.8rem
+
+
+
+.paragraph
+
+    color: $color-grey
+    font-size: 1.6rem
+    font-weight: 400
+    letter-spacing: .2rem
+    line-height: 140%
+    @include respond(tab-land)
+        font-size: 1.5rem
